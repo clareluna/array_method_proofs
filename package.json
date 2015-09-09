@@ -1,7 +1,7 @@
 {
-  "name": "algorithms",
+  "name": "greet",
   "version": "0.1.0",
-  "description": "algorithms app",
+  "description": "greetings app",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test",
@@ -10,14 +10,14 @@
   "bin": "bin/greet",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/codefellows/sea-d49.git"
   },
   "author": "clarelunamonahan@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/codefellows/sea-d49/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/codefellows/sea-d49#readme",
   "devDependencies": {
     "chai": "^3.2.0",
     "gulp": "^3.9.0",

@@ -27,7 +27,6 @@ describe('myUnique', function() {
 describe('myPush', function() {
 	it('should return add a value to the end of the array', function() {
 		var arr1 = [1,2,3];
-		console.log(myPush(arr1, 4));
 		expect(myPush(arr1, 4)).to.eql([ 1, 2, 3, 4, 4]);		
 	});
 });
@@ -35,7 +34,6 @@ describe('myPush', function() {
 describe('myUnshift', function() {
   it('should add a value to the start of the array', function() {
     var arr2 = [1,2,3];
-    console.log(myUnshift(arr2, 4));
     expect(myUnshift(arr2, 4)).to.eql([4, 2, 2, 2, 3]);
   });
 });

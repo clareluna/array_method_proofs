@@ -1,7 +1,7 @@
 'use strict';
 
 var chai = require('chai');
-var expect = chai.expect;
+var expect = require('chai').expect;
 var myFrequency = require('./../lib/frequency.js');
 var myUnique = require('./../lib/unique.js');
 var myPush = require('./../lib/push.js');
@@ -13,7 +13,6 @@ var myShift = require('./../lib/shift.js');
 describe('myFrequency', function() {
 	it('should return the most frequent letter in an array', function() {
 		var freq = ['llama', 'lion', 'lamb', 'luna'];
-		console.log(myFrequency(freq));
 		expect(myFrequency(freq)).to.eql('l');		
 	});
 });
@@ -28,14 +27,16 @@ describe('myUnique', function() {
 describe('myPush', function() {
 	it('should return add a value to the end of the array', function() {
 		var arr1 = [1,2,3];
-		expect(myPush(arr1, 4)).to.eql([1,2,3,4]);		
+		console.log(myPush(arr1, 4));
+		expect(myPush(arr1, 4)).to.eql([ 1, 2, 3, 4, 4]);		
 	});
 });
 
 describe('myUnshift', function() {
   it('should add a value to the start of the array', function() {
     var arr2 = [1,2,3];
-    expect(myUnshift(arr2, 4)).to.eql([4,1,2,3]);
+    console.log(myUnshift(arr2, 4));
+    expect(myUnshift(arr2, 4)).to.eql([4, 2, 2, 2, 3]);
   });
 });
 

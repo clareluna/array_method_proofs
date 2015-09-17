@@ -2,17 +2,18 @@
 
 var chai = require('chai');
 var expect = chai.expect;
-var myFrequency = require('../lib/frequency.js');
-var myUnique = require('../lib/unique.js');
-var myPush = require('../lib/push.js');
-var myUnshift = require('../lib/unshift.js');
-var myPop = require('../lib/pop.js');
-var myShift = require('../lib/shift.js');
+var myFrequency = require('./../lib/frequency.js');
+var myUnique = require('./../lib/unique.js');
+var myPush = require('./../lib/push.js');
+var myUnshift = require('./../lib/unshift.js');
+var myPop = require('./../lib/pop.js');
+var myShift = require('./../lib/shift.js');
 
 
 describe('myFrequency', function() {
 	it('should return the most frequent letter in an array', function() {
 		var freq = ['llama', 'lion', 'lamb', 'luna'];
+		console.log(myFrequency(freq));
 		expect(myFrequency(freq)).to.eql('l');		
 	});
 });
